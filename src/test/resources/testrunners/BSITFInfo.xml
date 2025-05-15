@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite Chrome" verbose="1">
+    <test name="P1 Tests">
+        <groups>
+            <run>
+                <include name="Quodeworks" />
+            </run>
+        </groups>
+        <packages>
+            <package name="org.cardinality.tests" />
+        </packages>
+    </test>
+</suite>
