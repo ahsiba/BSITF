@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite Chrome" verbose="1">
+    <parameter name="headless" value="false"></parameter>
+    <parameter name="browserName" value="chromium"></parameter>
+    <test name="P2 Tests">
+    <groups>
+      <run>
+        <include name="BSITFSearch" />
+      </run>
+    </groups>
+    <classes>
+      <class name="org.cardinality.tests.BSITFNotebook" />
+    </classes>
+  </test>
+</suite>
